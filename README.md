@@ -1,6 +1,11 @@
 <h1># GRE Fun</h1>
 <p>The main goal of this project is to make the study of GRE more fun and less serious. The project aims to integrate multiple social aspects into a student's GRE preparation. A few ideas that come to mind are leaderboards, points, live multiplayer events and timed events. Anything that'll make studying more fun and at the same time increase productivity.</p>
-<h5>Authentication details: Username=nishad Password=nishad</h5>
+<h5>Instructions to get it loaded:</h5>
+<ol>
+<li>Open bash and type in(without quotes) 'python manage.py runserver'</li>
+<li>Head to http://127.0.0.1/GREfun/</li> 
+</ol>
+<h3>Authentication details: Username=nishad Password=nishad</h3>
 
 
 <p>Work done:</p>

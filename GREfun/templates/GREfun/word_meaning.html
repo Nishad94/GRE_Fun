@@ -1,0 +1,4 @@
+word -> {{ word_ob.word_text }} <br><hr>
+{% for m in word_ob.meaning_set.all %}
+	meaning -> {{ m.meaning_text }}
+{% endfor %}

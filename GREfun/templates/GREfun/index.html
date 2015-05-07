@@ -1,0 +1,11 @@
+{% extends "GREfun/base.html" %}
+{% block title %}Gre Fun{% endblock %}
+
+{% block content %}
+<form action="{% url 'GREfun:dashboard' %}" method="post">
+{% csrf_token %}
+<p><b>Username:</b><input type="text" name="username"></p>
+<p><b>Password:</b><input type="password" name="password"></p>
+<input type="submit" value="Log Me In!"><br><br><hr>
+</form>
+{% endblock %}

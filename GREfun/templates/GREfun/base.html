@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} GRE Fun {% endblock %}</title>
+</head>
+<body>
+<h1 align="center"><a href="{% url 'GREfun:index' %}">GRE Fun</a></h1>
+<p align="center"><u>About</u></p><br><hr><br><br>
+<div id="content">
+	{% block content %}{% endblock %}
+</div>
+<br>
+<hr>
+<a href="{% url 'GREfun:logout' %}"> Logout </a><br>

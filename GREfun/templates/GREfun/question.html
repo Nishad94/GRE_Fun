@@ -1,0 +1,24 @@
+{% extends "GREfun/base.html" %}
+{% block title %}Gre Fun{% endblock %}
+
+{% block content %}
+
+<h3> {{ q.meaning.meaning_text }} </h1><br><hr><br>
+<form action = " {% url 'GREfun:question' q.id %}" method="post">
+{% csrf_token %}
+{% for choice in choices %}
+	<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice }}" />
+	<label for="choice{{ forloop.counter }}">{{ choice }} </label><br>
+{% endfor %}
+<br><br>
+<input type="submit" value="Submit"><br><br><hr>
+</form>
+{% if ans == 1 %}
+<p><font color="green"> CORRECT </font></p>
+{% elif ans == 2 %}
+<p><font color="red"> WRONG </font></p>
+{% endif %}
+<br><br>
+<a href="{% url 'GREfun:question' q_next_id %}"> Next Question </a><br>
+<a href="{% url 'GREfun:question' q_prev_id %}"> Prev Question </a>
+{% endblock %}

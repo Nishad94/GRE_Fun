@@ -1,0 +1,13 @@
+{% extends "GREfun/base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h3><b> User Stats </b></h6>
+<p> Name : {{ user.username }} </p>
+<p> Questions Attempted : {{ user.student.questions_total }} </p>
+<p> Questions Correct : {{ user.student.questions_correct }} </p>
+<p> Correct % : {{ correct_ratio }} </p>
+<hr><br><br>
+<a href="{% url 'GREfun:question' 1 %}"> Attempt Quiz </a><br>
+<a href="{% url 'GREfun:wordlist' %}"> Review Words </a><br>
+<a href="{% url 'GREfun:leaderboard' %}"> Leaderboard </a>
+{% endblock %}

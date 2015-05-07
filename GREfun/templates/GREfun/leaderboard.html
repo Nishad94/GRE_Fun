@@ -1,0 +1,10 @@
+{% extends "GREfun/base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<ol>
+&nbsp;&nbsp;&nbsp;&nbsp; Username&nbsp;&nbsp;&nbsp;&nbsp; Points<hr>
+{% for user in users %}
+<li> &nbsp;&nbsp;&nbsp;&nbsp; <font color="blue">{{ user.username }}</font>&nbsp;&nbsp;&nbsp;&nbsp; <font color="green">{{ user.student.points }}</font></li>
+{% endfor %}
+</ol>
+{% endblock %}

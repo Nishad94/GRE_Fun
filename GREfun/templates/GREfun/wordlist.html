@@ -1,0 +1,15 @@
+{% extends "GREfun/base.html" %}
+{% block title %}Gre Fun{% endblock %}
+
+{% block content %}
+{% if meaning_list %}
+	<ol>
+	<font color="red">WORD&nbsp;&nbsp;&nbsp;&nbsp;MEANING</font>
+	{% for m in meaning_list %}
+		<li><a href="{% url 'GREfun:word_meaning' m.word.word_text %}">{{ m.word.word_text }}</a>&nbsp;&nbsp;&nbsp;&nbsp; {{ m.meaning_text }}</li>
+	{% endfor %}
+	</ol>
+{% else %}
+	<p> No words to display </p>
+{% endif %}
+{% endblock %}

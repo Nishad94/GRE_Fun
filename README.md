@@ -1,4 +1,4 @@
-<h1># GRE Fun</h1>
+<h1>GRE Fun</h1>
 <p>The main goal of this project is to make the study of GRE more fun and less serious. The project aims to integrate multiple social aspects into a student's GRE preparation. A few ideas that come to mind are leaderboards, points, live multiplayer events and timed events. Anything that'll make studying more fun and at the same time increase productivity.</p>
 <h5>Instructions to get it loaded:</h5>
 <ol>

@@ -3,6 +3,7 @@ from GREfun import views
 
 urlpatterns = patterns('',
 	url(r'^$', views.index, name='index'),
+	url(r'^about$', views.about, name='about'),
 	url(r'^dashboard$', views.dashboard, name="dashboard"),
 	url(r'^leaderboard$',views.leaderboard,name='leaderboard'),
 	url(r'^logout$',views.logout_view, name="logout"),

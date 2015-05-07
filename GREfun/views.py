@@ -18,6 +18,9 @@ def logout_view(request):
 	logout(request)
 	return redirect('/GREfun')
 
+def about(request):
+	return render(request, 'GREfun/about.html', {})
+
 def leaderboard(request):
 	all_users = User.objects.all().order_by('student__points')
 	return render(request, 'GREfun/leaderboard.html', {"users":all_users})
